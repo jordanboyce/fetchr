@@ -1,0 +1,422 @@
+:root.dark-mode {
+  --primary-50: #eef2ff;
+  --primary-100: #e0e7ff;
+  --primary-200: #c7d2fe;
+  --primary-300: #a5b4fc;
+  --primary-400: #818cf8;
+  --primary-500: #6366f1;
+  --primary-600: #4f46e5;
+  --primary-700: #4338ca;
+  --primary-800: #3730a3;
+  --primary-900: #312e81;
+  --primary-950: #1e1b4b;
+
+  --surface-0: #ffffff;
+  --surface-50: #fafafa;
+  --surface-100: #f4f4f5;
+  --surface-200: #e4e4e7;
+  --surface-300: #d4d4d8;
+  --surface-400: #a1a1aa;
+  --surface-500: #71717a;
+  --surface-600: #52525b;
+  --surface-700: #3f3f46;
+  --surface-800: #27272a;
+  --surface-900: #18181b;
+  --surface-950: #09090b;
+
+  --surface-ground: var(--surface-950);
+  --surface-section: var(--surface-900);
+  --surface-card: var(--surface-800);
+  --surface-overlay: var(--surface-800);
+  --surface-border: var(--surface-700);
+  --surface-hover: var(--surface-700);
+
+  --text-color: #fafafa;
+  --text-color-secondary: #a1a1aa;
+
+  --primary-color: var(--primary-500);
+  --primary-color-text: #ffffff;
+
+  color-scheme: dark;
+}
+
+/* Component overrides */
+.dark-mode .p-component {
+  color: var(--text-color);
+}
+
+.dark-mode .p-inputtext,
+.dark-mode .p-dropdown,
+.dark-mode .p-textarea {
+  background: var(--surface-800);
+  color: var(--text-color);
+  border-color: var(--surface-600);
+}
+
+.dark-mode .p-inputtext:enabled:hover,
+.dark-mode .p-dropdown:not(.p-disabled):hover,
+.dark-mode .p-textarea:enabled:hover {
+  border-color: var(--primary-400);
+}
+
+.dark-mode .p-inputtext:enabled:focus,
+.dark-mode .p-dropdown:not(.p-disabled).p-focus,
+.dark-mode .p-textarea:enabled:focus {
+  border-color: var(--primary-500);
+  box-shadow: 0 0 0 0.2rem rgba(99, 102, 241, 0.2);
+}
+
+.dark-mode .p-button {
+  background: var(--primary-600);
+  border-color: var(--primary-600);
+  color: #ffffff;
+}
+
+.dark-mode .p-button:enabled:hover {
+  background: var(--primary-700);
+  border-color: var(--primary-700);
+}
+
+.dark-mode .p-button.p-button-text {
+  background: transparent;
+  color: var(--primary-400);
+}
+
+.dark-mode .p-button.p-button-text:enabled:hover {
+  background: rgba(99, 102, 241, 0.1);
+}
+
+.dark-mode .p-button.p-button-danger {
+  background: #ef4444;
+  border-color: #ef4444;
+}
+
+.dark-mode .p-button.p-button-danger:enabled:hover {
+  background: #dc2626;
+  border-color: #dc2626;
+}
+
+.dark-mode .p-button.p-button-success {
+  background: #10b981;
+  border-color: #10b981;
+}
+
+.dark-mode .p-button.p-button-success:enabled:hover {
+  background: #059669;
+  border-color: #059669;
+}
+
+.dark-mode .p-menubar {
+  background: var(--surface-section);
+  border-color: var(--surface-border);
+}
+
+.dark-mode .p-menubar .p-menuitem-link {
+  color: var(--text-color);
+}
+
+.dark-mode .p-menubar .p-menuitem-link:hover {
+  background: var(--surface-hover);
+}
+
+.dark-mode .p-tabview .p-tabview-nav {
+  background: var(--surface-section);
+  border-color: var(--surface-border);
+}
+
+.dark-mode .p-tabview .p-tabview-nav li .p-tabview-nav-link {
+  background: transparent;
+  color: var(--text-color-secondary);
+  border-color: transparent;
+}
+
+.dark-mode .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+  color: var(--primary-400);
+  border-color: var(--primary-400);
+}
+
+.dark-mode .p-datatable {
+  background: var(--surface-ground);
+  color: var(--text-color);
+}
+
+.dark-mode .p-datatable .p-datatable-thead > tr > th {
+  background: var(--surface-section);
+  color: var(--text-color);
+  border-color: var(--surface-border);
+}
+
+.dark-mode .p-datatable .p-datatable-tbody > tr {
+  background: var(--surface-ground);
+  color: var(--text-color);
+}
+
+.dark-mode .p-datatable .p-datatable-tbody > tr > td {
+  border-color: var(--surface-border);
+}
+
+.dark-mode .p-datatable .p-datatable-tbody > tr:hover {
+  background: var(--surface-hover);
+}
+
+.dark-mode .p-tree {
+  background: transparent;
+  color: var(--text-color);
+  border-color: var(--surface-border);
+}
+
+.dark-mode .p-tree .p-tree-container .p-treenode .p-treenode-content {
+  color: var(--text-color);
+}
+
+.dark-mode .p-tree .p-tree-container .p-treenode .p-treenode-content:hover {
+  background: var(--surface-hover);
+}
+
+.dark-mode .p-tree .p-tree-container .p-treenode .p-treenode-content.p-highlight {
+  background: rgba(99, 102, 241, 0.2);
+  color: var(--primary-400);
+}
+
+.dark-mode .p-dialog {
+  background: var(--surface-section);
+  color: var(--text-color);
+  border-color: var(--surface-border);
+}
+
+.dark-mode .p-dialog .p-dialog-header {
+  background: var(--surface-section);
+  color: var(--text-color);
+  border-bottom-color: var(--surface-border);
+}
+
+.dark-mode .p-dialog .p-dialog-content {
+  background: var(--surface-section);
+  color: var(--text-color);
+}
+
+.dark-mode .p-dialog .p-dialog-footer {
+  background: var(--surface-section);
+  border-top-color: var(--surface-border);
+}
+
+.dark-mode .p-badge {
+  background: var(--primary-600);
+  color: #ffffff;
+}
+
+.dark-mode .p-badge.p-badge-success {
+  background: #10b981;
+}
+
+.dark-mode .p-badge.p-badge-warning {
+  background: #f59e0b;
+}
+
+.dark-mode .p-badge.p-badge-danger {
+  background: #ef4444;
+}
+
+.dark-mode .p-badge.p-badge-info {
+  background: #3b82f6;
+}
+
+.dark-mode .p-splitter {
+  background: var(--surface-ground);
+  border-color: var(--surface-border);
+}
+
+.dark-mode .p-splitter .p-splitter-gutter {
+  background: var(--surface-border);
+}
+
+.dark-mode .p-splitter .p-splitter-gutter-handle {
+  background: var(--surface-500);
+}
+
+/* Light Mode Theme */
+:root.light-mode {
+  --primary-50: #eef2ff;
+  --primary-100: #e0e7ff;
+  --primary-200: #c7d2fe;
+  --primary-300: #a5b4fc;
+  --primary-400: #818cf8;
+  --primary-500: #6366f1;
+  --primary-600: #4f46e5;
+  --primary-700: #4338ca;
+  --primary-800: #3730a3;
+  --primary-900: #312e81;
+  --primary-950: #1e1b4b;
+
+  --surface-0: #ffffff;
+  --surface-50: #fafafa;
+  --surface-100: #f4f4f5;
+  --surface-200: #e4e4e7;
+  --surface-300: #d4d4d8;
+  --surface-400: #a1a1aa;
+  --surface-500: #71717a;
+  --surface-600: #52525b;
+  --surface-700: #3f3f46;
+  --surface-800: #27272a;
+  --surface-900: #18181b;
+  --surface-950: #09090b;
+
+  --surface-ground: var(--surface-50);
+  --surface-section: var(--surface-0);
+  --surface-card: var(--surface-0);
+  --surface-overlay: var(--surface-0);
+  --surface-border: var(--surface-200);
+  --surface-hover: var(--surface-100);
+
+  --text-color: #27272a;
+  --text-color-secondary: #52525b;
+
+  --primary-color: var(--primary-500);
+  --primary-color-text: #ffffff;
+
+  color-scheme: light;
+}
+
+.light-mode .p-component {
+  color: var(--text-color);
+}
+
+.light-mode .p-inputtext,
+.light-mode .p-dropdown,
+.light-mode .p-textarea {
+  background: var(--surface-0);
+  border-color: var(--surface-border);
+  color: var(--text-color);
+}
+
+.light-mode .p-inputtext:enabled:hover,
+.light-mode .p-dropdown:not(.p-disabled):hover,
+.light-mode .p-textarea:enabled:hover {
+  border-color: var(--primary-400);
+}
+
+.light-mode .p-inputtext:enabled:focus,
+.light-mode .p-dropdown:not(.p-disabled).p-focus,
+.light-mode .p-textarea:enabled:focus {
+  border-color: var(--primary-400);
+  box-shadow: 0 0 0 0.2rem rgba(129, 140, 248, 0.25);
+}
+
+.light-mode .p-dropdown-panel {
+  background: var(--surface-overlay);
+  border-color: var(--surface-border);
+}
+
+.light-mode .p-dropdown-items .p-dropdown-item {
+  color: var(--text-color);
+}
+
+.light-mode .p-dropdown-items .p-dropdown-item:hover {
+  background: var(--surface-hover);
+}
+
+.light-mode .p-dropdown-items .p-dropdown-item.p-highlight {
+  background: var(--primary-100);
+  color: var(--primary-700);
+}
+
+.light-mode .p-button {
+  background: var(--primary-500);
+  border-color: var(--primary-500);
+  color: white;
+}
+
+.light-mode .p-button:hover {
+  background: var(--primary-600);
+  border-color: var(--primary-600);
+}
+
+.light-mode .p-button.p-button-text {
+  background: transparent;
+  color: var(--primary-500);
+}
+
+.light-mode .p-button.p-button-text:hover {
+  background: var(--primary-50);
+}
+
+.light-mode .p-dialog {
+  background: var(--surface-section);
+  border: 1px solid var(--surface-border);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.light-mode .p-dialog .p-dialog-header {
+  background: var(--surface-section);
+  color: var(--text-color);
+  border-bottom: 1px solid var(--surface-border);
+}
+
+.light-mode .p-dialog .p-dialog-content {
+  background: var(--surface-section);
+  color: var(--text-color);
+}
+
+.light-mode .p-menubar {
+  background: var(--surface-section);
+  border-color: var(--surface-border);
+}
+
+.light-mode .p-tabview .p-tabview-nav {
+  background: var(--surface-section);
+  border-color: var(--surface-border);
+}
+
+.light-mode .p-tabview .p-tabview-nav li .p-tabview-nav-link {
+  background: transparent;
+  color: var(--text-color-secondary);
+  border-color: transparent;
+}
+
+.light-mode .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+  color: var(--primary-600);
+  border-color: var(--primary-600);
+}
+
+.light-mode .p-datatable {
+  background: var(--surface-ground);
+  color: var(--text-color);
+}
+
+.light-mode .p-datatable .p-datatable-thead > tr > th {
+  background: var(--surface-section);
+  color: var(--text-color);
+  border-color: var(--surface-border);
+}
+
+.light-mode .p-datatable .p-datatable-tbody > tr {
+  background: var(--surface-0);
+  color: var(--text-color);
+}
+
+.light-mode .p-datatable .p-datatable-tbody > tr > td {
+  border-color: var(--surface-border);
+}
+
+.light-mode .p-datatable .p-datatable-tbody > tr:hover {
+  background: var(--surface-hover);
+}
+
+.light-mode .p-splitter {
+  background: var(--surface-ground);
+  border-color: var(--surface-border);
+}
+
+.light-mode .p-splitter .p-splitter-gutter {
+  background: var(--surface-border);
+}
+
+.light-mode .p-splitter .p-splitter-gutter-handle {
+  background: var(--surface-400);
+}
+
+.light-mode .p-sidebar {
+  background: var(--surface-section);
+  border-color: var(--surface-border);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,89 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Frontend Build Output
+dist
+dist-ssr
+*.local
+
+# Tauri Build Output
+src-tauri/target
+src-tauri/WixTools
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+bun-debug.log*
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*~
+
+# Rust
+src-tauri/target/
+**/*.rs.bk
+Cargo.lock
+
+# Environment and Secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+secrets.json
+
+# Database (local development)
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Test Coverage
+coverage/
+*.lcov
+
+# Temporary Files
+*.tmp
+*.temp
+.cache/
+
+# Claude AI
+*.claude/
+*.claude.md
+
+# macOS
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+.Trash-*
